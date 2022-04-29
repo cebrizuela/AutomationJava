@@ -17,7 +17,7 @@ public class DifferentWaysOfDefiningElements {
 
     @AndroidFindBy (id = "android:id/text1")
     @iOSXCUITFindBy(id = "android:id/text1")
-    private static MobileElement myElement4;
+    private static MobileElement myElement5;
 
     public DifferentWaysOfDefiningElements(AppiumDriver driver){
         PageFactory.initElements(new AppiumFieldDecorator(driver),this);
@@ -32,13 +32,13 @@ public class DifferentWaysOfDefiningElements {
         System.out.println(myElement3.getText() + " using the @FindBy");
 
         //@AndroidFindBy, @iOSXCUITFindBy
-        System.out.println(myElement4.getText() + " Using the @AndroidFindBy, @iOSXCUITFindBy");
+        System.out.println(myElement5.getText() + " Using the @AndroidFindBy, @iOSXCUITFindBy");
 
         //By
         By myElement4 = By.xpath("//android.widget.TextView[@content-desc=\"Accessibility\"]");
         System.out.println(driver.findElement(myElement4).getText() + " Using the By");
 
-        //WebElement
+        //MobileBy
         By myElement2 = MobileBy.AccessibilityId("Accessibility");
         System.out.println(driver.findElement(myElement2).getText() + " Using the WebElement");
 

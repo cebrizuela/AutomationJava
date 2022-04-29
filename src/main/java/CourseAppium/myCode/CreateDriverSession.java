@@ -34,6 +34,7 @@ public class CreateDriverSession {
 
 
                 // Para instalar la App
+
                 String appUrl = System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator
                         + "resources" + File.separator + "ApiDemos-debug.apk";
                  caps.setCapability(MobileCapabilityType.APP, appUrl);
