@@ -19,7 +19,7 @@ public class CreateDriverSession {
         caps.setCapability("newCommandTimeout", 300);
 
         // Es necesario crear la url por donde corre   el servidor de appium
-        URL url = new URL("http://0.0.0.0:4723/wd/hub/");
+        URL url = new URL("http://127.0.0.1:4723/wd/hub/");
 
 
         switch (platformName) {
