@@ -39,6 +39,17 @@ public class CreateDriverSession {
                         + "resources" + File.separator + "ApiDemos-debug.apk";
                  caps.setCapability(MobileCapabilityType.APP, appUrl);
 
+                 //Para desbloquear el telefono
+                //Con pin
+                /*caps.setCapability("unlockType","pin");
+                caps.setCapability("unlockKey","1234");*/
+
+                // Con patron
+              /*  caps.setCapability("unlockType","pattern");
+                caps.setCapability("unlockKey","3214789");*/
+
+
+
 
                  // Para abrir la app usamos la opcion appPackage de appActivity
                 caps.setCapability("appPackage", "io.appium.android.apis");
