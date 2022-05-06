@@ -6,11 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-<<<<<<< HEAD
-        <module name="AppiumBásicoClara" />
-=======
-        <module name="AppiumBasico" />
->>>>>>> 532f37bd83058bfa520fbc6c3c44e309eb29b76e
         <module name="AppiumCourseMaven" />
       </profile>
     </annotationProcessing>
