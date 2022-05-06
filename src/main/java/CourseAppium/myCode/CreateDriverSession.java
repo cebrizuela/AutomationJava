@@ -19,7 +19,7 @@ public class CreateDriverSession {
         caps.setCapability("newCommandTimeout", 300);
 
         // Es necesario crear la url por donde corre   el servidor de appium
-        URL url = new URL("http://0.0.0.0:4723/wd/hub/");
+        URL url = new URL("http://127.0.0.1:4723/wd/hub/");
 
 
         switch (platformName) {
@@ -38,6 +38,17 @@ public class CreateDriverSession {
                 String appUrl = System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator
                         + "resources" + File.separator + "ApiDemos-debug.apk";
                  caps.setCapability(MobileCapabilityType.APP, appUrl);
+
+                 //Para desbloquear el telefono
+                //Con pin
+                /*caps.setCapability("unlockType","pin");
+                caps.setCapability("unlockKey","1234");*/
+
+                // Con patron
+              /*  caps.setCapability("unlockType","pattern");
+                caps.setCapability("unlockKey","3214789");*/
+
+
 
 
                  // Para abrir la app usamos la opcion appPackage de appActivity
